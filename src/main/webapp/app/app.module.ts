@@ -2,11 +2,11 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import './vendor';
-import { LoanApplicationSharedModule } from 'app/shared/shared.module';
-import { LoanApplicationCoreModule } from 'app/core/core.module';
-import { LoanApplicationAppRoutingModule } from './app-routing.module';
-import { LoanApplicationHomeModule } from './home/home.module';
-import { LoanApplicationEntityModule } from './entities/entity.module';
+import { CcwApplicationSharedModule } from 'app/shared/shared.module';
+import { CcwApplicationCoreModule } from 'app/core/core.module';
+import { CcwApplicationAppRoutingModule } from './app-routing.module';
+import { CcwApplicationHomeModule } from './home/home.module';
+import { CcwApplicationEntityModule } from './entities/entity.module';
 // jhipster-needle-angular-add-module-import JHipster will add new module here
 import { MainComponent } from './layouts/main/main.component';
 import { NavbarComponent } from './layouts/navbar/navbar.component';
@@ -18,14 +18,14 @@ import { ErrorComponent } from './layouts/error/error.component';
 @NgModule({
   imports: [
     BrowserModule,
-    LoanApplicationSharedModule,
-    LoanApplicationCoreModule,
-    LoanApplicationHomeModule,
+    CcwApplicationSharedModule,
+    CcwApplicationCoreModule,
+    CcwApplicationHomeModule,
     // jhipster-needle-angular-add-module JHipster will add new module here
-    LoanApplicationEntityModule,
-    LoanApplicationAppRoutingModule,
+    CcwApplicationEntityModule,
+    CcwApplicationAppRoutingModule,
   ],
   declarations: [MainComponent, NavbarComponent, ErrorComponent, PageRibbonComponent, ActiveMenuDirective, FooterComponent],
   bootstrap: [MainComponent],
 })
-export class LoanApplicationAppModule {}
+export class CcwApplicationAppModule {}

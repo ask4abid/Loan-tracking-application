@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { LoanApplicationSharedModule } from 'app/shared/shared.module';
+import { CcwApplicationSharedModule } from 'app/shared/shared.module';
 
 import { ConfigurationComponent } from './configuration.component';
 
 import { configurationRoute } from './configuration.route';
 
 @NgModule({
-  imports: [LoanApplicationSharedModule, RouterModule.forChild([configurationRoute])],
+  imports: [CcwApplicationSharedModule, RouterModule.forChild([configurationRoute])],
   declarations: [ConfigurationComponent],
 })
 export class ConfigurationModule {}
